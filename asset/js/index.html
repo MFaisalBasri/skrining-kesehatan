@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hitung Skor Survei</title>
+</head>
+
+<body>
+    <h1>Survei Kesehatan</h1>
+    <p>Pertanyaan 1: Apakah Anda merasa cukup tidur setiap malam?</p>
+    <input type="radio" name="q1" value="0"> Ya, selalu tidur cukup<br>
+    <input type="radio" name="q1" value="1"> Kadang-kadang kurang tidur<br>
+    <input type="radio" name="q1" value="2"> Sering kurang tidur<br>
+
+    <p>Pertanyaan 2: Apakah Anda rutin berolahraga setiap minggu?</p>
+    <input type="radio" name="q2" value="0"> Ya, rutin berolahraga<br>
+    <input type="radio" name="q2" value="1"> Kadang-kadang berolahraga<br>
+    <input type="radio" name="q2" value="2"> Tidak berolahraga sama sekali<br>
+
+    <p>Pertanyaan 3: Apakah Anda memiliki riwayat penyakit kronis?</p>
+    <input type="radio" name="q3" value="0"> Tidak ada riwayat penyakit<br>
+    <input type="radio" name="q3" value="1"> Satu jenis penyakit kronis<br>
+    <input type="radio" name="q3" value="2"> Lebih dari satu jenis penyakit kronis<br>
+
+    <button onclick="hitungSkor()">Hitung Skor</button>
+
+    <p id="hasilSkor"></p>
+
+    <script>
+        function hitungSkor() {
+            const q1Value = parseInt(document.querySelector('input[name="q1"]:checked').value);
+            const q2Value = parseInt(document.querySelector('input[name="q2"]:checked').value);
+            const q3Value = parseInt(document.querySelector('input[name="q3"]:checked').value);
+
+            const totalSkor = q1Value + q2Value + q3Value;
+
+            document.getElementById('hasilSkor').innerHTML = `Skor Anda adalah: ${totalSkor}`;
+        }
+    </script>
+</body>
+
+</html>
