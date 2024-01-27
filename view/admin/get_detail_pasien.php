@@ -77,14 +77,8 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['nik'])) {
             <td>Email Keluarga</td>
             <td>" . $row['email_keluarga'] . "</td>
         </tr>
-        <tr>
-            <td>Hasil Skrining</td>
-            <td>2</td>
-        </tr>
     </table>
 ";
 
     exit; // Keluar dari skrip PHP setelah menampilkan detail
 }
-?>
-
