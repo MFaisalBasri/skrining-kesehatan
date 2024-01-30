@@ -1,11 +1,17 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
+<<<<<<< HEAD
 -- Generation Time: Jan 28, 2024 at 08:27 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.10
+=======
+-- Waktu pembuatan: 27 Jan 2024 pada 10.49
+-- Versi server: 10.4.28-MariaDB
+-- Versi PHP: 8.1.17
+>>>>>>> 4e87e94b09dfe564c6d6268f702eaf2b2ab3bef8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -33,7 +39,7 @@ CREATE TABLE `tb_admin` (
   `no_hp` int(13) NOT NULL,
   `email` varchar(30) NOT NULL,
   `password` varchar(30) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `tb_admin`
@@ -56,7 +62,11 @@ CREATE TABLE `tb_hasilskrining` (
   `ginjal` varchar(30) NOT NULL,
   `diabetes` varchar(30) NOT NULL,
   `jantung` varchar(30) NOT NULL
+<<<<<<< HEAD
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+=======
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+>>>>>>> 4e87e94b09dfe564c6d6268f702eaf2b2ab3bef8
 
 -- --------------------------------------------------------
 
@@ -71,7 +81,11 @@ CREATE TABLE `tb_penyakit` (
   `ginjal` int(2) NOT NULL,
   `diabetes` int(2) NOT NULL,
   `jantung` int(2) NOT NULL
+<<<<<<< HEAD
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+=======
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+>>>>>>> 4e87e94b09dfe564c6d6268f702eaf2b2ab3bef8
 
 -- --------------------------------------------------------
 
@@ -94,7 +108,11 @@ CREATE TABLE `tb_peserta` (
   `alamat_keluarga` varchar(50) NOT NULL,
   `nohp_keluarga` int(13) NOT NULL,
   `email_keluarga` varchar(30) NOT NULL
+<<<<<<< HEAD
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+=======
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+>>>>>>> 4e87e94b09dfe564c6d6268f702eaf2b2ab3bef8
 
 --
 -- Indexes for dumped tables
